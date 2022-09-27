@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+                Inter:["Inter","sans-serif"],
+              },
+            extend: {
+              backgroundImage: {
+                    'hero-pattern': "url('./IMAGES/hero7_background.png')",},
+              
+              colors: {  
+
+                pblue:'#0EA5E9',
+                pnavy:'#0F4A8A',
+                back1:'#F5F7FA',
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+  <!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body class="m-0 font-Inter">
+
+
+  <!--  Navbar -->
+    <nav class="  p-3 shadow-2xl   ">
+
+        <div class=" text-center  flex items-center justify-between mx-12">
+             
+            <div class="md:hidden">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mt-[0.3rem]">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                
+              </a>
+            </div>
+                     
+          <div>
+          <img  class="w-[11rem]" src="./paytm_logo.png" alt="">
+        </div>
+
+
+        <div class="hidden md:flex space-x-6 text-[1rem] font-semibold  ">
+            <a class="hover:bg-back1 p-2 rounded" href="">Paytm for Consumer</a>
+            <a class="hover:bg-back1 p-2 rounded" href="">Paytm For Business</a>
+            <a class="hover:bg-back1 p-2 rounded" href="">Company</a>
+            <a class="hover:bg-back1 p-2 rounded" href="">Investor Relations</a>
+            <a class="hover:bg-back1 p-2 rounded" href="">Career</a>
+        </div>
+
+        <div class="flex items-center bg-sky-400  rounded-3xl  ml-0.5 px-0.5 relative " >
+         <span class="text-[0.9rem]  text-white font-medium  ml-3 mx-2 " >Sign in</span>
+         <img class=" w-8  pr-0.5 py-0.5  relative left-0.5" src="./IMAGES/login logo.svg" alt="">
+        </div>
+
+        </div>
+    </nav>
+
+    <!-- section-2 -->
+
+      <section class=" flex justify-center items-center text-center text-[0.7rem] p-3 ">
+        <p class="text-sm font-medium" >No Wallet KYC Required</p>
+        <span class="scale-150 mx-1.5" >&#128522;</span>
+        <p class="text-sm">to pay using UPI on Paytm.</p> 
+        <a class="font-medium text-sm" href="#"> Learn more.</a>
+      </section>
+      
+      <!-- section-3 hero 1 -->
+
+      <section class=" bg-white md:h-[86vh]">
+        <div class="mx-20 flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow mt-3 md:w-1/2  md:pr-1 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ml-[2rem] ">
+              <img class="w-[70px] mb-11 drop-shadow-xl" src="./IMAGES/paytm-logo2.png" alt="">
+            <h1 class=" font-bold  sm:text-[3rem] text-2xl mb-4 w-[30rem] leading-[3.5rem]">India's Most-loved Payments App</h1>
+            <p class="mb-6 leading-relaxed font-medium  w-[23rem]">Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+            <div class="flex flex-row items-center justify-center space-x-1 bg-black  py-2.5 px-6 rounded-[2rem] hover:bg-white border hover:border-black hover:text-black text-[0.7rem] font-medium space-x-1 hover:fill-black text-white ">
+          
+                <p class="text-sm">Download Paytm App</p>
+                <a class="hover:fill-black ml-1" href="#"> 
+                  <svg  class="fill-white hover:fill-black w-4 h-4 "   viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" ></path></svg>
+                </a>
+                <a class="hover:fill-black" href="#">
+                  <svg class="fill-white hover:fill-black w-4 h-4 " viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg"><path  fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" ></path></svg>
+                </a>    
+                     
+               </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 relative  ">
+            <img class="relative Class
+            Properties md:ml-[9.2rem]  object-cover object-center rounded w-[29rem]" alt="hero" src="./IMAGES/hero1.png">
+          </div>
+        </div>
+      </section>
+
+      <!-- section-4 card deck 1 -->
+      <section class=" bg-pblue md:h-[50vh]">
+
+
+        <div class="p-12">
+          <div>
+            <h1 class=" ml-[5rem] text-white md:text-4xl text-3xl font-bold ">Recharge & Pay Bills on Paytm.</h1>
+          </div>
+          <!--  Recharge and pay cards -->
+
+          <div class="mt-10 ml-[5rem] flex flex-col md:flex-row  items-center justify-center ">
+
+            <!-- card-1 -->
+            <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-42  hover:bg-cyan-600/50 mr-7" >
+              <img class=" w-[4rem]" src="./IMAGES/r1.png" alt="">
+              <h4 class="text-white  mt-4">Recharge</h4>
+              <p class="text-white text-sm font-bold">Prepaid</p>
+              <div class=" text-sm flex flex-row text-white font-bold">
+              <p class="cursor-pointer">Mobile</p>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg></a>
+            </div>
+            </div>
+
+             <!-- card-2 -->
+             <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-42  hover:bg-cyan-600/50 mr-7" >
+              <img class=" w-[4rem]" src="./IMAGES/r2.png" alt="">
+              <h4 class="text-white  mt-4">Pay</h4>
+              <p class="text-white text-sm font-bold">Rent</p>
+              <div class=" text-sm flex flex-row text-white font-bold">
+              <p class="cursor-pointer">Payment</p>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg></a>
+            </div>
+            </div>
+            <!-- card-3 -->
+            <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-42  hover:bg-cyan-600/50 mr-7" >
+              <img class=" w-[4rem]" src="./IMAGES/r3.png" alt="">
+              <h4 class="text-white  mt-4">Pay</h4>
+              <p class="text-white text-sm font-bold">Electricity</p>
+              <div class=" text-sm flex flex-row text-white font-bold">
+              <p class="cursor-pointer">Bill</p>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg></a>
+            </div>
+            </div>
+
+             <!-- card-4 -->
+             <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-42  hover:bg-cyan-600/50 mr-7" >
+              <img class=" w-[4rem]" src="./IMAGES/r4.png" alt="">
+              <h4 class="text-white  mt-4">Recharge</h4>
+              <p class="text-white text-sm font-bold">DTH</p>
+              <div class=" text-sm flex flex-row text-white font-bold">
+              <p class="cursor-pointer">Connection</p>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg></a>
+            </div>
+            </div>
+            
+             <!-- card-5 -->
+             <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-42  hover:bg-cyan-600/50 mr-7" >
+              <img class=" w-[4rem]" src="./IMAGES/r5.png" alt="">
+              <h4 class="text-white  mt-4">Book</h4>
+              <p class="text-white text-sm font-bold">Gas</p>
+              <div class=" text-sm flex flex-row text-white font-bold">
+              <p class="cursor-pointer">Cylinder</p>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg></a>
+            </div>
+            </div>
+            <!-- card-6 -->
+            <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-42  hover:bg-cyan-600/50 mr-7" >
+              <img class=" w-[4rem]" src="./IMAGES/r6.png" alt="">
+              <h4 class="text-white  mt-4">Pay</h4>
+              <p class="text-white text-sm font-bold">Credit</p>
+              <div class=" text-sm flex flex-row text-white font-bold">
+              <p class="cursor-pointer">Card Bill</p>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg></a>
+            </div>
+            </div>
+            <!-- card-7 -->
+            <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-42  hover:bg-cyan-600/50 mr-7" >
+              <img class=" w-[4rem]" src="./IMAGES/r7.png" alt="">
+              <h4 class="text-white  mt-4">ALL</h4>
+              <p class="text-white text-sm font-bold">Payment</p>
+              <div class=" text-sm flex flex-row text-white font-bold">
+              <p class="cursor-pointer">Services</p>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg></a>
+            </div>
+            </div>
+            
+          </div>
+
+        </div>
+      
+      </section>
+
+<!-- section-5  card deck 2-->
+<section class=" bg-pnavy md:h-[50vh]">
+
+
+  <div class="p-12">
+    <div>
+      <h1 class=" ml-[5rem] text-white md:text-4xl text-3xl font-bold ">Recharge & Pay Bills on Paytm.</h1>
+    </div>
+    <!--  Recharge and pay cards -->
+
+    <div class="mt-8 ml-[5rem] flex  flex-col md:flex-row items-center justify-center ">
+
+      <!-- card-1 -->
+      <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-36  hover:bg-blue-900/50 mr-7" >
+        <img class=" w-[4rem]" src="./IMAGES/s1.png" alt="">
+        <h4 class="text-white font-bold mt-4">Movie</h4>
+        
+        <div class=" text-sm flex flex-row text-white font-bold">
+        <p class="cursor-pointer">Tickets</p>
+         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg></a>
+      </div>
+      </div>
+
+       <!-- card-2 -->
+       <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-36  hover:bg-blue-900/50 mr-7" >
+        <img class=" w-[4rem]" src="./IMAGES/s2.png" alt="">
+        <h4 class="text-white font-bold mt-4">Flight</h4>
+            <div class=" text-sm flex flex-row text-white font-bold">
+        <p class="cursor-pointer">Tickets</p>
+         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg></a>
+      </div>
+      </div>
+      <!-- card-3 -->
+      <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-36  hover:bg-blue-900/50 mr-7" >
+        <img class=" w-[4rem]" src="./IMAGES/s3.png" alt="">
+        <h4 class="text-white font-bold  mt-4">Bus</h4>
+        </p>
+        <div class=" text-sm flex flex-row text-white font-bold">
+        <p class="cursor-pointer">Tickets</p>
+         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg></a>
+      </div>
+      </div>
+
+       <!-- card-4 -->
+       <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-36  hover:bg-blue-900/50 mr-7" >
+        <img class=" w-[4rem]" src="./IMAGES/s4.png" alt="">
+        <h4 class="text-white font-bold  mt-4">Train</h4>
+           <div class=" text-sm flex flex-row text-white font-bold">
+        <p class="cursor-pointer">Tickets</p>
+         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg></a>
+      </div>
+      </div>
+      
+       <!-- card-5 -->
+       <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-36  hover:bg-blue-900/50 mr-7" >
+        <img class=" w-[4rem]" src="./IMAGES/s5.png" alt="">
+        <h4 class="text-white font-bold mt-4">Car &</h4>
+           <div class=" text-sm flex flex-row text-white font-bold">
+        <p class="cursor-pointer">Bikes</p>
+         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg></a>
+      </div>
+      </div>
+      <!-- card-6 -->
+      <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-36  hover:bg-blue-900/50 mr-7" >
+        <img class=" w-[4rem]" src="./IMAGES/s6.png" alt="">
+        <h4 class="text-white font-bold  mt-4">International</h4>
+        <div class=" text-sm flex flex-row text-white font-bold">
+        <p class="cursor-pointer">Flights</p>
+         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg></a>
+      </div>
+      </div>
+      <!-- card-7 -->
+      <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-36 h-36  hover:bg-blue-900/50 mr-7" >
+        <img class=" w-[4rem]" src="./IMAGES/s7.png" alt="">
+        <h4 class="text-white font-bold mt-4">Invest</h4>
+        
+        <div class=" text-sm flex flex-row text-white font-bold">
+        <p class="cursor-pointer">in Stocks</p>
+         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg></a>
+      </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+</section>
+
+<!--  section -6  hero 2 -->
+<section class=" md:bg-back1  p-[2rem] md:px-[9rem] md:pt-[7rem] md:pb-[1rem] flex flex-col  md:text-left justify-center text-center md:text-left"> 
+    <h1 class="text-[2.5rem] font-bold mb-[1.5rem]">Paytm Payment Instruments</h1>
+<div class="   flex flex-col-reverse   md:flex-row-reverse justify-center bg-white rounded-xl md:p-[5rem]  ">
+  <div class="mt-[4rem] md:mt-0">
+    <img  src="./IMAGES/hero2.png" class=" "  />
+  </div>
+
+
+    <div class="mt-[4rem] md:ml-[3rem]">
+      <div class="flex flex-row justify-center md:justify-start items-center md:text-left mb-[2rem] ">
+        <img  class="w-[70px] mr-2" src="./IMAGES/hero2_small.png" alt="">
+        <h4 class="font-bold ">Paytm <br> Wallet</h4>
+      </div>
+
+      <h1 class="md:text-4xl text-2xl  font-bold">The Fastest Way to Pay In-store & Online.</h1>
+      <p class="py-6 font-medium">Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and apps.</p>
+      <button class="btn btn-primary">
+        <div class="flex flex-row items-center justify-center space-x-1 bg-black  py-2.5 px-6 rounded-[2rem] hover:bg-white border hover:border-black hover:text-black text-[0.7rem] font-medium space-x-1 hover:fill-black text-white ">
+          
+          <p class="text-sm">Download Paytm App</p>
+          <a class="hover:fill-black ml-1" href="#"> 
+            <svg  class="fill-white hover:fill-black w-4 h-4 "   viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" ></path></svg>
+          </a>
+          <a class="hover:fill-black" href="#">
+            <svg class="fill-white hover:fill-black w-4 h-4 " viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg"><path  fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" ></path></svg>
+          </a>    
+               
+         </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!--  section -7  hero 3 -->
+<section class=" md:bg-back1  p-[2rem] md:px-[9rem] md:py-[1.5rem] flex flex-col  md:text-left justify-center text-center md:text-left"> 
+ 
+<div class="   flex flex-col-reverse   md:flex-row-reverse justify-center bg-white rounded-xl md:p-[1rem] md:pb-[2rem]  ">
+<div class="mt-[4rem] md:mt-[4rem]">
+  <img  src="./IMAGES/hero3.png" class=" md:w-[90rem]   "  />
+</div>
+
+
+  <div class="mt-[4rem] md:ml-[7rem]">
+    <div class="flex flex-row justify-center md:justify-start items-center md:text-left mb-[2rem] ">
+      <img  class="w-[70px] mr-2" src="./IMAGES/hero3_small.png" alt="">
+      <h4 class="font-bold ">UPI Money <br>Transfer</h4>
+    </div>
+
+    <h1 class="md:text-4xl text-2xl md;w-[20rem] font-bold">Pay anyone directly from your bank account.</h1>
+    <p class="py-6 md:w-[26rem] font-medium md:mt-4">Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.</p>
+    <button class="btn md:mt-4 btn-primary">
+      <div class="flex flex-row items-center justify-center space-x-1 bg-black  py-2.5 px-6 rounded-[2rem] hover:bg-white border hover:border-black hover:text-black text-[0.7rem] font-medium space-x-1 hover:fill-black text-white ">
+        
+        <p class="text-sm">Download Paytm App</p>
+        <a class="hover:fill-black ml-1" href="#"> 
+          <svg  class="fill-white hover:fill-black w-4 h-4 "   viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" ></path></svg>
+        </a>
+        <a class="hover:fill-black" href="#">
+          <svg class="fill-white hover:fill-black w-4 h-4 " viewBox="0 0 14 16" fill="white" xmlns="http://www.w3.org/2000/svg"><path  fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" ></path></svg>
+        </a>    
+             
+       </div>
+    </button>
+  </div>
+</div>
+</section>
+
+
+<!--  section-8  hero 4 -->
+<section class=" md:bg-back1  p-[2rem] md:px-[9rem] md:py-[1.5rem] flex flex-col  md:text-left justify-center text-center md:text-left"> 
+ 
+  <div class="   flex flex-col-reverse   md:flex-row-reverse justify-center bg-white rounded-xl md:p-[1rem] md:pb-[2rem]  ">
+  <div class="mt-[4rem] md:mt-[4rem]">
+    <img  src="./IMAGES/hero4.png" class="  w-[25rem] md:ml-[7rem]"  />
+  </div>
+  
+  
+    <div class="mt-[4rem] md:mt-[8rem] md:ml-[7rem]">
+      <div class="flex flex-row justify-center md:justify-start items-center md:text-left mb-[2rem] ">
+        <img  class="w-[170px] mr-2" src="./IMAGES/hero4_small.png" alt="">
+       
+      </div>
+  
+      <h1 class="md:text-4xl text-2xl md:w-[25rem]  font-bold">Want it? <br>
+        No more waiting for it.</h1>
+      <p class="py-6 font-medium md:mt-4 md:w-[25rem]">With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.</p>
+      <button class="btn md:mt-4 btn-primary">
+        <div class="flex flex-row items-center justify-center space-x-1 bg-pnavy py-2.5 px-6 rounded-[2rem] hover:bg-pblue font-medium space-x-1  text-white ">
+          
+          <p class="text-medium cursor-pointer mr-2">Learn More</p>
+          <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative  ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+                        
+         </div>
+      </button>
+    </div>
+  </div>
+  </section>
+
+  <!--  section-9  hero 5 -->
+<section class="  flex md:flex-row  flex-col md:bg-back1  justify-between p-[2rem] md:px-[9rem] md:pt-[1.5rem] md:pb-[8rem]"> 
+ 
+  <!--  hero 5 left part -->
+  <div class="bg-white rounded-xl md:w-1/2 text-center md:text-left md:mr-[3rem] h-[38rem] ">
+    <div class=" flex flex-col-reverse md:justify-center  m-[3rem]"> 
+  <div class="mt-[0.5rem] ">
+    <img  src="./IMAGES/hero51.png" class="  w-[25rem] md:ml-[3rem]"/>
+  </div>
+  
+  
+    <div class=" md:ml-[3rem]">
+      <div class="flex flex-row justify-center md:justify-start items-center md:text-left mb-[2rem] ">
+        <img  class="w-[170px] " src="./IMAGES/hero5-small1.png" alt="">
+       
+      </div>
+  
+      <h1 class="md:text-4xl text-2xl font-bold">Unlimited Cashback Every time.</h1>
+      <p class="py-6 font-medium md:mt-4 ">Paytm HDFC Bank Select Credit Card.
+        A card with assured Cashback and incredible offers.</p>
+   
+    </div>
+   </div> 
+  </div>
+            <!--  hero 5 right part -->
+
+  <div class="  bg-white rounded-xl md:w-1/2 text-center md:text-left  h-[38rem]  ">
+    <div class=" flex flex-col-reverse md:justify-center  m-[3rem] mt-[6.65rem]"> 
+    <div class="">
+      <img  src="./IMAGES/hero52.png" class="  w-[25rem] md:ml-[3rem]"/>
+    </div>
+    
+    
+      <div class="md:ml-[3rem]">
+
+        <div class="flex flex-row justify-center md:justify-start items-center md:text-left mb-[2rem] ">
+          <img  class="w-[170px] mb-[0.5rem]" src="./IMAGES/hero5_small2.png" alt="">
+        </div>
+    
+        <h1 class="md:text-4xl text-2xl   font-bold">India’s Most<br>
+          Sincere Credit Card</h1>
+        <p class="py-6 font-medium md:mt-4 ">Paytm SBI Card SELECT - With Intelligent Features & Great Rewards that Never Expire</p>
+       
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section-10 hero 6 -->
+
+
+
+  <section class=" bg-white md:h-[86vh] h-[110vh] ">
+    <div class="mx-20 flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow mt-3 md:w-1/2  md:pr-1 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ml-[2.5rem] ">
+        <h1 class=" font-bold  sm:text-[2.7rem] text-2xl mb-12  leading-[3.5rem]">Financial Services by Paytm</h1>
+          <img class="w-[180px] mb-16 drop-shadow-xl" src="./IMAGES/hero6_small.png" alt="">
+        <h1 class=" font-bold  sm:text-[2.5rem] text-2xl mb-8 w-[30rem] leading-[3.5rem]">India's most sincere bank.</h1>
+        <p class="mb-6 leading-relaxed text-[1.1
+        rem] font-semibold w-[25rem] text center md:w-[30rem]">Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today.</p>
+        <button class="btn md:mt-4 btn-primary">
+          <div class="flex flex-row items-center justify-center space-x-1 bg-pnavy py-2.5 px-6 rounded-[2rem] hover:bg-pblue font-medium space-x-1  text-white ">
+            
+            <p class="text-medium cursor-pointer mr-2">Learn More</p>
+            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative  ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+                          
+           </div>
+        </button>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2  w-5/6 relative  ">
+        <img class=" Class
+        Properties  object-cover object-center rounded md:ml-[7rem] md:w-[25rem] " alt="hero" src="./IMAGES/hero6.png">
+      </div>
+    </div>
+  </section>
+
+   <!-- section-11 hero 7 -->
+
+
+
+   <section class="  bg-back1 md:h-[90vh] bg-hero-pattern  bg-cover mt-[16rem]">
+    <div class="md:mx-20 flex px-5 py-24 md:flex-row-reverse flex-col items-center">
+      <div class="lg:flex-grow  md:w-1/2  md:pr-1 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center md:ml-[12rem] ">
+        
+          <img class="w-[180px] mb-8 drop-shadow-xl" src="./IMAGES/hero7_small.png" alt="">
+        <h1 class=" font-bold  sm:text-[2.3rem] text-2xl mb-8 w-[25rem] leading-[3rem]">Build Long-term Wealth & Achieve your Goals.</h1>
+        <p class="mb-2 leading-relaxed text-[1.1
+        rem] font-semibold mb-[1rem] md:w-[30rem] w-[25rem]">Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can help you create wealth & realise your dreams.</p>
+        <button class="btn md:mt-4 btn-primary">
+          <div class="flex flex-row items-center justify-center space-x-1 bg-pnavy py-2.5 px-6 rounded-[2rem] hover:bg-pblue font-medium space-x-1  text-white ">
+            
+            <p class="text-medium cursor-pointer mr-2">Learn More</p>
+            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative  ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+                          
+           </div>
+        </button>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2  w-5/6 relative  ">
+        <img class=" Class
+        Properties  object-cover object-center rounded md:ml-[1rem] w-[25rem]" alt="hero" src="./IMAGES/hero7.png">
+      </div>
+    </div>
+  </section>
+
+
+      <!-- section-12 hero 8 -->
+
+
+
+   <section class="  bg-white md:h-[90vh]  mt-[1rem] mb-[2rem]">
+    <div class="mx-20 flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow  md:w-1/2  md:pr-1 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center ml-[1rem] ">
+        
+          <img class="w-[150px] mb-8 " src="./IMAGES/hero8_small.jpeg" alt="">
+        <h1 class=" font-bold  sm:text-[2.3rem] text-2xl mb-8 w-[25rem] leading-[3rem]">Insurance made easy.</h1>
+        <p class="mb-2 leading-relaxed text-[1.1
+        rem] font-semibold mb-[1rem] md:w-[30rem] w-[25rem]">Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.</p>
+        <button class="btn md:mt-4 btn-primary">
+          <div class="flex flex-row items-center justify-center space-x-1 bg-pnavy py-2.5 px-6 rounded-[2rem] hover:bg-pblue font-medium space-x-1  text-white ">
+            
+            <p class="text-medium cursor-pointer mr-2">Learn More</p>
+            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative  ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+                          
+           </div>
+        </button>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2  w-5/6 relative  ">
+        <img class=" Class
+        Properties  object-cover object-center rounded md:ml-[8rem] w-[25rem]" alt="hero" src="./IMAGES/hero8.png">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- section-13 hero 9 -->
+
+
+
+  <section class="  bg-back1 md:h-[90vh]   mb-[6rem]">
+    <div class="mx-20 flex px-5 py-24 md:flex-row-reverse flex-col items-center">
+      <div class="lg:flex-grow  md:w-1/2  md:pr-1 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center md:ml-[18rem] ">
+        
+          <img class="w-[150px] mb-8 " src="./IMAGES/hero9_small.png" alt="">
+        <h1 class=" font-bold  sm:text-[2.3rem] text-2xl mb-8 w-[25rem] leading-[3rem]">Get a Personal Loan in 2 Minutes.</h1>
+        <p class="mb-2 leading-relaxed text-[1.1
+        rem] font-semibold md:w-[30rem] w-[24rem] mb-[1rem]">Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.</p>
+        <button class="btn md:mt-4 btn-primary">
+          <div class="flex flex-row items-center justify-center space-x-1 bg-pnavy py-2.5 px-6 rounded-[2rem] hover:bg-pblue font-medium space-x-1  text-white ">
+            
+            <p class="text-medium cursor-pointer mr-2">Learn More</p>
+            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative  ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+                          
+           </div>
+        </button>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2  w-5/6 relative  ">
+        <img class=" Class
+        Properties  object-cover object-center rounded md:ml-[1rem] w-[25rem]" alt="hero" src="./IMAGES/hero9.png">
+      </div>
+    </div>
+  </section>
+
+
+  <!--  section -14  hero 10 -->
+<section class=" md:bg-white  p-[2rem] md:px-[9rem] md:pt-[7rem] md:pb-[1rem] flex flex-col  md:text-left justify-center text-center md:text-left"> 
+  <h1 class="text-[2.5rem] font-bold mb-[1.5rem]">Business Services by Paytm</h1>
+<div class="   flex flex-col-reverse   md:flex-row-reverse justify-center md:bg-back1 rounded-xl md:p-[5rem]  ">
+<div class="mt-[4rem] md:mt-0">
+  <img  src="./IMAGES/hero10.png" class=" md:w-[35rem] md:ml-[5rem] "  />
+</div>
+
+
+  <div class="mt-[4rem] md:flex md:flex-col   md:justify-center md:items-start md:ml-[3rem]">
+      <h1 class="md:text-4xl text-2xl  w-[25rem] font-bold">Accept payments online with ease</h1>
+    <p class="py-6 font-medium w-[25rem] ">Grow your business with the payment gateway that powers India’s largest brands and even the Paytm App</p>
+    <button class="btn md:mt-4 btn-primary  ">
+      <div class="flex flex-row items-center justify-center space-x-1 bg-pnavy py-2.5 px-6 rounded-[2rem] hover:bg-pblue font-medium space-x-1  text-white ">
+        
+        <p class="text-medium cursor-pointer mr-2">Learn More</p>
+        <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative  ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+                      
+       </div>
+    </button>
+  </div>
+</div>
+</section>
+
+
+<!--  section -15  hero 11 -->
+
+<section class=" md:bg-white  p-[2rem] md:px-[9rem] md:py-[1.5rem] flex flex-col  md:text-left justify-center text-center md:text-left"> 
+ 
+  <div class="   flex flex-col-reverse   md:flex-row-reverse justify-center md:bg-back1 rounded-xl md:p-[1rem] md:pb-[2rem]  ">
+  <div class="mt-[4rem] md:mt-[4rem]">
+    <img  src="./IMAGES/hero11.png" class=" md:w-[30rem]  md:ml-[4.2rem] "  />
+  </div>
+  
+  
+    <div class="mt-[4rem] md:ml-[7rem] md:flex md:flex-col md:items-start md:justify-center">
+      
+      <h1 class="md:text-4xl text-2xl md:w-[25rem] font-bold">In-shop payments powered by Paytm.</h1>
+      <p class="py-6 md:w-[26rem] font-medium md:mt-4">Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of solutions for all kind of merchants</p>
+      <button class="btn md:mt-4 btn-primary  ">
+        <div class="flex flex-row items-center justify-center space-x-1 bg-pnavy py-2.5 px-6 rounded-[2rem] hover:bg-pblue font-medium space-x-1  text-white ">
+          
+          <p class="text-medium cursor-pointer mr-2">Learn More</p>
+          <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative  ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+                        
+         </div>
+      </button>
+    </div>
+  </div>
+  </section>
+  
+
+    <!-- section-16 card deck 3 -->
+    <section class=" bg-white mt-[4rem] md:h-[80vh]">
+
+
+      <div class="p-12">
+        <div>
+          <h1 class=" ml-[5rem] text-black md:w-[25rem] md:text-4xl text-3xl font-bold ">Business Tools to help your business grow</h1>
+        </div>
+        <!--  Business cards -->
+
+        <div class="mt-8 ml-[5rem] flex flex-col md:flex-row items-center justify-center ">
+
+          <!-- card-1 -->
+          <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-[15rem] h-[30rem] mb-[1rem]  mr-7" >
+            <img class="  w-[15rem]" src="./IMAGES/t1.png" alt="">
+            <h4 class="text-black md:w-[12rem] mb-[1.5rem] font-bold text-[1.5rem] mt-8">POS Billing
+              Software</h4>
+            <p class="text-black mb-[1rem] text-[1.2rem] font-medium">Say Hello to Smart Retail Business Management</p>
+            <div class=" text-sm flex flex-row text-black font-bold">
+            <p class="cursor-pointer">Learn More</p>
+             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg></a>
+          </div>
+          </div>
+
+           <!-- card-2 -->
+           <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-[15rem] h-[30rem] mb-[1rem]  mr-7" >
+            <img class="  w-[15rem]" src="./IMAGES/t2.png" alt="">
+            <h4 class="text-black md:w-[12rem] mb-[1.5rem] font-bold text-[1.5rem] mt-8">Paytm for
+              Business App</h4>
+            <p class="text-black  mb-[1rem] text-[1.2rem] font-medium">Everything you need to manage your business on your phone</p>
+            <div class=" text-sm flex flex-row text-black font-bold">
+            <p class="cursor-pointer">Learn More</p>
+             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg></a>
+          </div>
+          </div>
+          <!-- card-3 -->
+          <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-[15rem] h-[30rem] mb-[1rem]  mr-7" >
+            <img class="  w-[15rem]" src="./IMAGES/t3.png" alt="">
+            <h4 class="text-black md:w-[12rem] mb-[1.5rem]  font-bold text-[1.5rem] mt-8">Advertise on
+              Paytm</h4>
+            <p class="text-black  mb-[1rem] text-[1.2rem] font-medium">Grow your business by advertising on India’s largest mobile business</p>
+            <div class=" text-sm flex flex-row text-black font-bold">
+            <p class="cursor-pointer">Learn More</p>
+             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg></a>
+          </div>
+          </div>
+
+           <!-- card-4 -->
+           <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-[15rem] h-[30rem] mb-[1rem]  mr-7" >
+            <img class="  w-[15rem]" src="./IMAGES/t4.png" alt="">
+            <h4 class="text-black md:w-[12rem] mb-[1.5rem] font-bold text-[1.5rem] mt-8">Business <br>
+              Khata</h4>
+            <p class="text-black  mb-[1rem] text-[1.2rem] font-medium">Managing Khata made easy</p>
+            <div class=" text-sm flex flex-row text-black font-bold">
+            <p class="cursor-pointer">Learn More</p>
+             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative bottom-0.5 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg></a>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    
+    </section>
+
+
+      <!-- section-17 card deck 4 -->
+
+      <section class=" bg-white md:mt-[16rem] md:h-[80vh]">
+
+
+        <div class="p-12">
+          
+          <!--  Paytm Money cards -->
+  
+          <div class="mt-8 ml-[5rem] flex flex-col md:flex-row items-center justify-center ">
+  
+            <!-- card-1 -->
+            <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-[15rem] h-[18rem]   mr-7 "  >
+              <img class="  w-[9rem] mb-[3rem]" src="./IMAGES/u1.png" alt="">
+              
+              <p class="text-black mb-[1rem] text-sm font-medium">Get started on wealth creation journey with Zero brokerage fee & no hidden charges.</p>
+              <div class=" text-sm flex flex-row text-sky-400 hover:text-black font-bold mt-[1rem]">
+              <p class="cursor-pointer text-base">Learn More</p>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative ml-2 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg></a>
+            </div>
+            </div>
+  
+              <!-- card-2 -->
+            <div class="flex flex-col items-center bg-sky-400  py-4 pl-4 pr-2.5 rounded-xl  w-[13rem] h-[16rem] mb-[1rem]
+            mr-7" >
+              <img class=" w-[10rem] mr-[0.5rem] " src="./IMAGES/u2.png" alt="">
+              <h4 class="text-white text-center   font-bold mt-4">Invest in <br>
+              Stocks</h4>
+               
+            </div>
+
+             <!-- card-3 -->
+             <div class="flex flex-col items-center bg-sky-400 py-4 pl-4 pr-2.5 rounded-xl  w-[13rem] h-[16rem] mb-[1rem]
+             mr-7" >
+              <img class=" w-[10rem] mr-[0.5rem]" src="./IMAGES/u3.png" alt="">
+              <h4 class="text-white text-center font-bold mt-4">Apply for IPO</h4>
+          
+            </div>
+            <!-- card-4 -->
+            <div class="flex flex-col items-center bg-sky-400 py-4 pl-4 pr-2.5 rounded-xl  w-[13rem] h-[16rem] mb-[1rem]
+            mr-7" >
+              <img class=" w-[10rem] mr-[0.5rem]" src="./IMAGES/u4.png" alt="">
+              <h4 class="text-white text-center font-bold mt-4">Invest in <br>
+              ETFs</h4>
+              
+  
+            </div>
+
+             <!-- card-5 -->
+             <div class="flex flex-col items-center bg-sky-400 py-4 pl-4 pr-2.5 rounded-xl  w-[13rem] h-[16rem] mb-[1rem]
+             mr-7" >
+              <img class=" w-[10rem] mr-[0.5rem] " src="./IMAGES/u5.png" alt="">
+              <h4 class="text-white text-center font-bold mt-4">Buy Gold</h4>
+               
+            </div>
+            
+             <!-- card-6 -->
+             <div class="flex flex-col items-center bg-sky-400 py-4 pl-4 pr-2.5 rounded-xl  w-[13rem] h-[16rem] mb-[1rem]
+             mr-7" >
+              <img class=" w-[10rem] mr-[0.5rem]" src="./IMAGES/u6.png" alt="">
+              <h4 class="text-white text-center font-bold mt-4">Invest in <br>
+                Mutual Funds</h4>
+           
+            </div>
+          </div>
+  
+        </div>
+      
+      </section>
+
+
+       <!-- section-18 card deck 5 -->
+      
+       <section class=" bg-white md:mt-[-8rem] md:h-[80vh]">
+
+
+        <div class="p-12">
+          
+          <!--  Paytm Money cards 2-->
+  
+          <div class="mt-8 ml-[5rem] flex flex-col md:flex-row items-center justify-center ">
+  
+            <!-- card-1 -->
+            <div class="flex flex-col justify-start  py-4 pl-4 pr-2.5 rounded-xl  w-[15rem] h-[18rem]   mr-7 "  >
+              <img class="  w-[9rem] mb-[3rem]" src="./IMAGES/v1.png" alt="">
+              
+              <p class="text-black mb-[1rem] text-sm font-medium">Best travel solutions with quick ticket bookings, great offers and easy refunds</p>
+              <div class=" text-sm flex flex-row text-sky-400 hover:text-black font-bold mt-[1rem]">
+              <p class="cursor-pointer text-base">Learn More</p>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-6 relative ml-2 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg></a>
+            </div>
+            </div>
+  
+              <!-- card-2 -->
+            <div class="flex flex-col items-center bg-sky-400  py-4 pl-4 pr-2.5 rounded-xl  w-[8.5rem] h-[12rem] mb-[1rem]
+            mr-7" >
+              <img class=" w-[3rem] mr-[0.5rem] " src="./IMAGES/v2.png" alt="">
+              <h4 class="text-white text-center   font-bold mt-4">Flat 14% <br>
+              Cashback</h4>
+              <p class="text-white text-center text-sm font-bold">With Code <br> WELCOMEFLIGHT</p>
+               
+            </div>
+
+             <!-- card-3 -->
+             <div class="flex flex-col items-center bg-sky-400 py-4 pl-4 pr-2.5 rounded-xl  w-[8.5rem] h-[12rem] mb-[1rem]
+             mr-7" >
+              <img class=" w-[3rem] mr-[0.5rem]" src="./IMAGES/v3.png" alt="">
+              <h4 class="text-white text-center font-bold mt-4">100% Refund</h4>
+              <p class="text-white text-center text-sm font-bold">With Paytm's <br> Cancellation Protect</p>
+            </div>
+            <!-- card-4 -->
+            <div class="flex flex-col items-center bg-sky-400 py-4 pl-4 pr-2.5 rounded-xl  w-[8.5rem] h-[12rem] mb-[1rem]
+            mr-7" >
+              <img class=" w-[3rem] mr-[0.5rem]" src="./IMAGES/v4.png" alt="">
+              <h4 class="text-white text-center font-bold mt-4">Flat 10% <br>
+              Cashback</h4>
+              <p class="text-white text-center text-sm font-bold">with Code <br> HAPPYBUS</p>
+              
+  
+            </div>
+
+             <!-- card-5 -->
+             <div class="flex flex-col items-center bg-sky-400 py-4 pl-4 pr-2.5 rounded-xl  w-[8.5rem] h-[12rem] mb-[1rem]
+             mr-7" >
+              <img class=" w-[3rem] mr-[0.5rem] " src="./IMAGES/v5.png" alt="">
+              <h4 class="text-white text-center font-bold mt-4">Sanitised Bus <br> Options With <br> TravelSafe+</h4>
+               
+            </div>
+            
+             <!-- card-6 -->
+             <div class="flex flex-col items-center bg-sky-400 py-4 pl-4 pr-2.5 rounded-xl  w-[8.5rem] h-[12rem] mb-[1rem]
+             mr-7" >
+              <img class=" w-[3rem] mr-[0.5rem]" src="./IMAGES/v6.png" alt="">
+              <h4 class="text-white text-center font-bold mt-4">Hassle Free <br>
+                Train Ticket <br>
+              Bookings</h4>
+              </div>
+
+                <!-- card-7 -->
+             <div class="flex flex-col items-center bg-sky-400 py-4 pl-4 pr-2.5 rounded-xl  w-[8.5rem] h-[12rem] mb-[1rem]
+             mr-7" >
+              <img class=" w-[3rem] mr-[0.5rem]" src="./IMAGES/v7.png" alt="">
+              <h4 class="text-white text-center font-bold mt-4">PNR Status <br>
+                Check In few <br>
+              Simple Clicks</h4>
+           
+            </div>
+          </div>
+  
+        </div>
+      
+      </section>
+
+
+        <!-- section-19 Footer -->
+
+        <footer class=" md:h-[25vh]  h-[50vh] bg-back1">
+          <div class="flex flex-col text-center items-center justify-center flex-wrap md:flex-row md:justify-between ml-[6rem] mr-[4rem] p-[2rem] border-b border-zinc-600">
+            <div class="flex flex-col text-center items-center md:flex-row itmes-center space-x-5">
+              <h3 class="font-semibold text-[1.1rem] text-left w-[12rem] mb-[1rem]">Download Paytm App to Pay from anywhere</h3>
+              <a href="#">
+                <img class="scale-90 mb-[1rem]" src="./IMAGES/f1.svg" alt="apple store">
+              </a>
+              <a href="#"> 
+                <img class="scale-90 mb-[1rem]" src="./IMAGES/f2.svg" alt="">
+              </a>
+            </div>
+
+            <div class="flex flex-row items-center space-x-8">
+              <a href="#"> 
+                <img class="scale-90" src="./IMAGES/twt.svg" alt="">
+              </a>
+              <a href="#">
+                <img class="scale-90" src="./IMAGES/insta.svg" alt="">
+              </a>
+              <a href="#">
+                <img class="scale-90" src="./IMAGES/fb.svg" alt="">
+              </a>
+            </div>
+
+          </div>
+
+
+
+
+
+        </footer>
+
+
+
+
+    
+</body>
+</html>
