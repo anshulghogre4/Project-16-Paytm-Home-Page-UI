@@ -8,16 +8,16 @@
 
 ## Key Learnings from the project
 
-- _understood the working of Tailwind CSS._
-- _Mobile reponsivene websites can be build with faster pace_
-- _learned How can we gather all the assets from the target website_
-- _Learned about diffrent component providing websites such as Tailblocks,mamba Ui and Daisy etc._
+- _Understood the working of Tailwind CSS.._
+- _Responsive websites can be built at a faster pace._
+- _Learned How can we gather all the assets from the target website._
+- _Learned about different components providing websites such as Tailblocks, mamba Ui, Daisy, etc._
 
 ---
 
 ### Screenshots:-
 
-![Project15](./a16.png)
+![Project16](./a16.png)
 
 ---
 
@@ -25,6 +25,6 @@
 
 ---
 
-## [Live-Link](https://project-15-product-design-landing-pag.netlify.app/)
+## [Live-Link](https://project-16-paytm-home-page-ui.netlify.app/)
 
 ---
