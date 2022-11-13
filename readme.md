@@ -25,6 +25,6 @@
 
 ---
 
-## [Live-Link](https://project-16-paytm-home-page-ui.netlify.app/)
+## [Live-Link](https://project-16-payment-app-home-page-ui.netlify.app/)
 
 ---
